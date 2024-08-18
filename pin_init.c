@@ -24,7 +24,7 @@ void pin_init(void)
 {
 		RCC->AHBENR |=(1<<19); //puerto C del led de la tarjeta
 		RCC->AHBENR |=(1<<17); // puerto a, botÃ³n del joystick
-		RCC->AHBENR |=(1<<18); // puerto b, led por el que casi me navajean
+		RCC->AHBENR |=(1<<18); // puerto b, led que había causado confusión
 
 		GPIOA->PUPDR |=(1<<0); //pullup del PA0
 		GPIOB->MODER |=(1<<24); 		// se habilita Pb12 como output
